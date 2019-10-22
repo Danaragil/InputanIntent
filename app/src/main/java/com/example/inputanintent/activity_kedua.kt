@@ -19,16 +19,17 @@ class activity_kedua : AppCompatActivity() {
         hasil.text = "NIM : "+nim+"\nNama: "+nama+"\nNilai: "+nilai
 
         val keterangan = findViewById<TextView>(R.id.keterangan)
-        if (nilai >= 80.toInt().toString() || nilai == 100.toInt().toString()) {
+        val nilaiInt = nilai.toInt()
+        if (nilaiInt >= 80 || nilaiInt == 100) {
             keterangan.text = "Keterangan : A"
         }
-        else if (nilai >= 60.toInt().toString()) {
+        else if (nilaiInt >= 60) {
             keterangan.text = "Keterangan : B"
         }
-        else if (nilai >= 40.toInt().toString()) {
+        else if (nilaiInt >= 40) {
             keterangan.text = "Keterangan : C"
         }
-        else if (nilai >= 20.toInt().toString()) {
+        else if (nilaiInt >= 20) {
             keterangan.text = "Keterangan : D"
         }
         else if (nilai >= 0.toInt().toString()) {
