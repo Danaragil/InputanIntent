@@ -32,7 +32,7 @@ class activity_kedua : AppCompatActivity() {
         else if (nilaiInt >= 20) {
             keterangan.text = "Keterangan : D"
         }
-        else if (nilai >= 0.toInt().toString()) {
+        else if (nilaiInt >= 0) {
             keterangan.text = "Keterangan : E"
         }
     }
